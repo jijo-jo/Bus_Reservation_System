@@ -104,7 +104,7 @@ function ResponsiveAppBar(props) {
                 onClick={()=>{props.navigate("/dashboard")}}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-               Dashboard
+                Dashboard
               </Button>
               <Button
                 onClick={()=>{props.navigate("/reserve")}}
