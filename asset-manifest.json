@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bus-booking/static/css/main.9a24037b.css",
+    "main.js": "/bus-booking/static/js/main.e2180efc.js",
+    "index.html": "/bus-booking/index.html",
+    "main.9a24037b.css.map": "/bus-booking/static/css/main.9a24037b.css.map",
+    "main.e2180efc.js.map": "/bus-booking/static/js/main.e2180efc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a24037b.css",
+    "static/js/main.e2180efc.js"
+  ]
+}
