@@ -32,7 +32,7 @@ const LoginPage = () => {
   useEffect(()=>{setShowerror(false)},[username]);
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
-      <h1>Login</h1>
+      <h1> Login</h1>
       {showerror && <h4 style={{color:"red"}}>Invalid credential</h4>}
       <TextField
         label="Username"
