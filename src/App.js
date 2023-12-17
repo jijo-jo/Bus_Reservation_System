@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ReservationForm from './Components/ReservationForm';
+import Dashboard from './Components/Dashboard';
+import LoginPage from './Components/Login';
+import Confirmbooking from './Components/Confirmreservation';
+import ErrorPage from './Components/Errorpage';
+import { useState } from 'react';
+const App = () => {
+  const [enable,setEnable] = useState(false);
+  if(localStorage.getItem('logindetails'))
+  {
+    setEnable(true);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<LoginPage/>} />
+          {enable && <Route path="/dashboard" element={<Dashboard />} />}
+          {enable && <Route path="/reserve" element={<ReservationForm />} />}
+          {enable && <Route path="/confirm/:number" element={<Confirmbooking/>}/>}
+          <Route path="/*" element={<ErrorPage/>}/>
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
+
