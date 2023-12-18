@@ -68,11 +68,11 @@ const Dashboard = () => {
              <Button variant="outlined" onClick={()=>{handleClickOpen()}}>Edit Profile</Button>
         </div>
       </Container>
-      <div style={{padding:"20px"}}>
+     { localStorage.getItem('bookingjson') &&(<div style={{padding:"20px"}}>
         <Container>
         <MyTable/>
         </Container>
-      </div>
+      </div>)}
       </div>
     );
   };

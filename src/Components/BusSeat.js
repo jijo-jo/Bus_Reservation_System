@@ -16,7 +16,8 @@ const BusSeat = ({ seatNumber,deck, onClick }) => {
 
 
   return (
-      <div  onClick={() => onClick(deck,seatNumber)} style={{marginTop:"5px"}}>
+      <div  onClick={() =>{
+      if(!(filterdata[0].bookingstatus === "booked"  || filterdata[0].bookingstatus === "inprogress")){onClick(deck,seatNumber)}}} style={{marginTop:"5px"}}>
       <Paper className={filterdata[0].bookingstatus} >
         <Typography variant="body1"> {`${deck}:${seatNumber}`}</Typography>
       </Paper>

@@ -9,4 +9,5 @@
 .free{
     background-color: white !important;
     padding: 16px;
+    cursor: pointer;
 }
