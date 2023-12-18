@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/bus-booking/static/css/main.9a24037b.css",
-    "main.js": "/bus-booking/static/js/main.e2180efc.js",
+    "main.css": "/bus-booking/static/css/main.0f8b9d5a.css",
+    "main.js": "/bus-booking/static/js/main.acadb3e1.js",
+    "static/media/login.png": "/bus-booking/static/media/login.eb4da2c8f166cd37686b.png",
     "index.html": "/bus-booking/index.html",
-    "main.9a24037b.css.map": "/bus-booking/static/css/main.9a24037b.css.map",
-    "main.e2180efc.js.map": "/bus-booking/static/js/main.e2180efc.js.map"
+    "main.0f8b9d5a.css.map": "/bus-booking/static/css/main.0f8b9d5a.css.map",
+    "main.acadb3e1.js.map": "/bus-booking/static/js/main.acadb3e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a24037b.css",
-    "static/js/main.e2180efc.js"
+    "static/css/main.0f8b9d5a.css",
+    "static/js/main.acadb3e1.js"
   ]
 }
